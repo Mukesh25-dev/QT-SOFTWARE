@@ -254,6 +254,13 @@
             </property>
            </widget>
           </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_raw">
+            <property name="text">
+             <string>Update</string>
+            </property>
+           </widget>
+          </item>
          </layout>
         </item>
         <item>
@@ -310,7 +317,7 @@
         <item>
          <layout class="QVBoxLayout" name="verticalLayout_5">
           <item>
-           <widget class="QLabel" name="label_2">
+           <widget class="QLabel" name="label_wf_row">
             <property name="font">
              <font>
               <pointsize>12</pointsize>
@@ -325,10 +332,27 @@
            </widget>
           </item>
           <item>
-           <widget class="QDoubleSpinBox" name="doubleSpinBox"/>
+           <widget class="QDoubleSpinBox" name="doubleSpinBox_wfrow"/>
           </item>
           <item>
-           <widget class="QLabel" name="label_3">
+           <widget class="QPushButton" name="pushbutton_wfrow">
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Update</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="pyqtgraph" name="graphicsView_wf_row"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_wfcolumn">
             <property name="font">
              <font>
               <pointsize>12</pointsize>
@@ -343,25 +367,22 @@
            </widget>
           </item>
           <item>
-           <widget class="QDoubleSpinBox" name="doubleSpinBox_2"/>
+           <widget class="QDoubleSpinBox" name="doubleSpinBox_wfcolumn"/>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton">
+           <widget class="QPushButton" name="pushButton_wfcol">
             <property name="font">
              <font>
               <pointsize>11</pointsize>
              </font>
             </property>
             <property name="text">
-             <string>View Chart</string>
+             <string>Update</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="pyqtgraph" name="graphicsView_wf_col"/>
-          </item>
-          <item>
-           <widget class="pyqtgraph" name="graphicsView_wf_row"/>
           </item>
          </layout>
         </item>
@@ -378,7 +399,7 @@
         <item>
          <layout class="QVBoxLayout" name="verticalLayout_6">
           <item>
-           <widget class="QLabel" name="label_5">
+           <widget class="QLabel" name="label_specrow">
             <property name="font">
              <font>
               <pointsize>12</pointsize>
@@ -393,10 +414,25 @@
            </widget>
           </item>
           <item>
-           <widget class="QDoubleSpinBox" name="doubleSpinBox_3"/>
+           <widget class="QDoubleSpinBox" name="doubleSpinBox_specrow"/>
           </item>
           <item>
-           <widget class="QLabel" name="label_4">
+           <widget class="QPushButton" name="pushButton_specrow">
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Update</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="pyqtgraph" name="graphicsView_psd_row"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_speccol">
             <property name="font">
              <font>
               <pointsize>12</pointsize>
@@ -411,25 +447,22 @@
            </widget>
           </item>
           <item>
-           <widget class="QDoubleSpinBox" name="doubleSpinBox_4"/>
+           <widget class="QDoubleSpinBox" name="doubleSpinBox_speccol"/>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_2">
+           <widget class="QPushButton" name="pushButton_speccol">
             <property name="font">
              <font>
               <pointsize>11</pointsize>
              </font>
             </property>
             <property name="text">
-             <string>View Chart</string>
+             <string>Update</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="pyqtgraph" name="graphicsView_psd_col"/>
-          </item>
-          <item>
-           <widget class="pyqtgraph" name="graphicsView_psd_row"/>
           </item>
          </layout>
         </item>
@@ -446,7 +479,7 @@
         <item>
          <layout class="QVBoxLayout" name="verticalLayout_7">
           <item>
-           <widget class="QLabel" name="label_6">
+           <widget class="QLabel" name="label_stftrow">
             <property name="font">
              <font>
               <pointsize>12</pointsize>
@@ -464,10 +497,25 @@
            </widget>
           </item>
           <item>
-           <widget class="QDoubleSpinBox" name="doubleSpinBox_5"/>
+           <widget class="QDoubleSpinBox" name="doubleSpinBox_stftrow"/>
           </item>
           <item>
-           <widget class="QLabel" name="label_7">
+           <widget class="QPushButton" name="pushButton_stftrow">
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Update</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="pyqtgraph" name="graphicsView_stft_row"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_stftcol">
             <property name="font">
              <font>
               <pointsize>12</pointsize>
@@ -482,29 +530,95 @@
            </widget>
           </item>
           <item>
-           <widget class="QDoubleSpinBox" name="doubleSpinBox_6"/>
+           <widget class="QDoubleSpinBox" name="doubleSpinBox_stftcol"/>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_3">
+           <widget class="QPushButton" name="pushButton_stftcol">
             <property name="font">
              <font>
               <pointsize>11</pointsize>
              </font>
             </property>
             <property name="text">
-             <string>View chart</string>
+             <string>Update</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="pyqtgraph" name="graphicsView_stft_col"/>
           </item>
-          <item>
-           <widget class="pyqtgraph" name="graphicsView_stft_row"/>
-          </item>
          </layout>
         </item>
        </layout>
+      </widget>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>F-K</string>
+       </attribute>
+       <widget class="pyqtgraph" name="graphicsView_fk">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>411</width>
+          <height>501</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>10</y>
+          <width>321</width>
+          <height>501</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QLabel" name="label_f_row">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Enter Row</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDoubleSpinBox" name="doubleSpinBox_fkrow"/>
+         </item>
+         <item>
+          <widget class="QGraphicsView" name="graphicsView_fkrow"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_fkcolumn">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Enter Column</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDoubleSpinBox" name="doubleSpinBox_fkcol"/>
+         </item>
+         <item>
+          <widget class="QGraphicsView" name="graphicsView_fkcol"/>
+         </item>
+        </layout>
+       </widget>
       </widget>
      </widget>
     </item>
